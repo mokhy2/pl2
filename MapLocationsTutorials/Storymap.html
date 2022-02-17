@@ -40,15 +40,6 @@
 
  const graphicsLayer = new GraphicsLayer();
  map.add(graphicsLayer);
-    
- const popupTemplate = {
-    title: "{Name}",
-    content: "{Description}"
- }
-  const attributes = {
-    Name: "The life-changing trail",
-    Description: "This trail changed my life. How? Well, let me tell you... it all started at my camp site; after breakfast me and my brother decided to bike a new set of roads/trais. The decision was made switfly and we were off to the otherside of the park, never before seen by both of us. As we were going under the bridge to get there, we saw a whole new ecosystem never before seen, mareveouls nontheless. We continued on the trail to get us to the parks iconic lake, Bon Echo Lake. We got there and long story short it was one of the most peaceful times we have ever came across. That concludes the story."
- }
 
     // Create a line geometry
  const polyline = {
@@ -389,9 +380,6 @@
  const polylineGraphic = new Graphic({
     geometry: polyline,
     symbol: simpleLineSymbol,
-   
-    title: title,
-    content: content
  });
  graphicsLayer.add(polylineGraphic);
 
